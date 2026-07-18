@@ -1,0 +1,313 @@
+.titleRow {
+  margin-bottom: var(--space-l);
+}
+
+.title {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+}
+
+.titleInfo {
+  font-size: var(--font-size-xs);
+  color: var(--color-blue);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.titleInfo:hover {
+  text-decoration: underline;
+}
+
+/* 4 Cards Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-m);
+  margin-bottom: var(--space-xxl);
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color 0.15s;
+}
+
+.card:hover {
+  border-color: #545b64;
+}
+
+.cardTitle {
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.cardDescription {
+  font-size: var(--font-size-s);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+/* Pill buttons */
+.pillOutlineBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+  border: 1px solid var(--color-blue);
+  border-radius: 20px;
+  color: var(--color-blue);
+  font-size: var(--font-size-s);
+  font-weight: 600;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  white-space: nowrap;
+}
+
+.pillOutlineBtn:hover:not(:disabled) {
+  background: rgba(84, 178, 255, 0.08);
+  text-decoration: none;
+}
+
+.pillOutlineBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Section styling */
+.section {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xxl);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xxs);
+}
+
+.sectionSubtitle {
+  font-size: var(--font-size-s);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-m);
+}
+
+.blueLink {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.blueLink:hover {
+  text-decoration: underline;
+}
+
+/* Domain Form */
+.domainForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-s);
+}
+
+.domainInput {
+  width: 100%;
+  max-width: 550px;
+  height: 32px;
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-s);
+  padding: 0 var(--space-s);
+  color: var(--color-input-text);
+  font-size: var(--font-size-s);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.domainInput:focus {
+  border-color: var(--color-blue);
+}
+
+.domainHelpText {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  max-width: 650px;
+  line-height: 1.45;
+}
+
+/* Alerts */
+.availAlert, .unavailAlert {
+  margin-top: var(--space-m);
+  padding: var(--space-s) var(--space-m);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-s);
+  width: 100%;
+  max-width: 550px;
+  line-height: 1.4;
+}
+
+.availAlert {
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-success);
+  color: var(--color-text-primary);
+}
+
+.unavailAlert {
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error);
+  color: var(--color-text-primary);
+}
+
+.alertLink {
+  color: var(--color-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.alertLink:hover {
+  text-decoration: underline;
+}
+
+/* Notifications section specific styles */
+.sectionHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-s);
+}
+
+.refreshBtn {
+  background: none;
+  border: none;
+  color: var(--color-blue);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: background-color 0.15s;
+}
+
+.refreshBtn:hover {
+  background: rgba(84, 178, 255, 0.08);
+}
+
+/* Table Card styling */
+.tableCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.tableToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-s) var(--space-m);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tableSearchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+
+.tableSearchIcon {
+  position: absolute;
+  left: 10px;
+  color: #718096;
+  pointer-events: none;
+}
+
+.tableSearchInput {
+  width: 100%;
+  height: 30px;
+  background: var(--color-input-bg);
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-s);
+  padding: 0 10px 0 30px;
+  color: var(--color-input-text);
+  font-size: var(--font-size-s);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.tableSearchInput:focus {
+  border-color: var(--color-blue);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.paginationBtn {
+  background: none;
+  border: none;
+  color: var(--color-blue);
+  cursor: pointer;
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationBtn:disabled {
+  color: #718096;
+  cursor: not-allowed;
+}
+
+.paginationNum {
+  font-size: var(--font-size-s);
+  color: var(--color-text-primary);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-s);
+}
+
+.table th {
+  text-align: left;
+  padding: 10px var(--space-m);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.table td {
+  padding: var(--space-s) var(--space-m);
+  color: var(--color-text-primary);
+}
+
+.emptyRow td {
+  text-align: center;
+  color: var(--color-text-tertiary);
+  padding: var(--space-xxl);
+}

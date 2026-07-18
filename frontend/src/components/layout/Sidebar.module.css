@@ -1,0 +1,147 @@
+.sidebar {
+  position: fixed;
+  top: var(--topnav-height);
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--color-squid-ink);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-m) var(--space-l);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.title {
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.collapseBtn {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-s);
+}
+
+.collapseBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.nav {
+  padding: var(--space-s) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 8px var(--space-l);
+  color: #d5dbdb;
+  font-size: var(--font-size-s);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navItem.active {
+  color: var(--color-blue);
+  font-weight: 600;
+  background: none;
+}
+
+.group {
+  margin-top: var(--space-xs);
+}
+
+.groupHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  width: 100%;
+  padding: 8px var(--space-l);
+  background: none;
+  border: none;
+  color: #a0aec0;
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.groupHeader:hover {
+  color: #ffffff;
+}
+
+.chevron {
+  font-size: 8px;
+  width: 12px;
+  color: #718096;
+}
+
+.groupItems {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-top: 2px;
+  gap: 2px;
+}
+
+.groupItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px var(--space-l) 6px 12px;
+  color: #d5dbdb;
+  font-size: var(--font-size-s);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.groupItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.groupItem.active {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.newBadge {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--color-blue);
+  border-bottom: 1px dotted var(--color-blue);
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+
+.label {
+  white-space: nowrap;
+}

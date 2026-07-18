@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.info {
+  font-size: var(--font-size-m);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.count {
+  font-size: var(--font-size-s);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.error {
+  background: var(--color-error-bg);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  padding: var(--space-s) var(--space-m);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-s);
+}
+
+.fileInput {
+  padding: var(--space-s);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-m);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-s);
+  padding-top: var(--space-m);
+  border-top: 1px solid var(--color-border-light);
+}

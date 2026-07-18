@@ -1,0 +1,76 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-m);
+  font-size: var(--font-size-s);
+}
+
+.info {
+  color: var(--color-text-secondary);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxs);
+}
+
+.pageSize {
+  padding: var(--space-xxs) var(--space-xs);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-s);
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  margin-right: var(--space-xs);
+}
+
+.navButton {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navButton:hover:not(:disabled) {
+  background: var(--color-blue-light);
+  border-color: var(--color-blue);
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pageButton {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-s);
+  background: var(--color-white);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-size: var(--font-size-s);
+}
+
+.pageButton:hover {
+  background: var(--color-blue-light);
+}
+
+.pageButton.active {
+  background: var(--color-blue);
+  color: var(--color-white);
+  border-color: var(--color-blue);
+}

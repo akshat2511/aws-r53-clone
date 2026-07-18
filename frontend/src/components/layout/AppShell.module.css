@@ -1,0 +1,124 @@
+.shell {
+  min-height: 100vh;
+  position: relative;
+  background: var(--color-background);
+}
+
+.main {
+  margin-top: var(--topnav-height);
+  margin-left: var(--sidebar-width);
+  padding: var(--space-xl) var(--space-xxl) 48px var(--space-xxl);
+  min-height: calc(100vh - var(--topnav-height));
+  transition: margin-left 0.2s ease-in-out;
+}
+
+.collapsed {
+  margin-left: 0;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* AWS Console Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: var(--color-squid-ink);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-m);
+  z-index: 1000;
+  font-size: 11px;
+  color: #a0aec0;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.footerItem {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  cursor: pointer;
+  font-size: 11px;
+  transition: color 0.15s;
+}
+
+.footerItem:hover {
+  color: #ffffff;
+}
+
+.footerItem:hover .footerIcon {
+  color: #ffffff;
+}
+
+.footerIcon {
+  color: #a0aec0;
+  transition: color 0.15s;
+}
+
+.footerSeparator {
+  color: #2e3b4e;
+  margin: 0 var(--space-xs);
+  user-select: none;
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.copyright {
+  color: #718096;
+}
+
+.footerLink {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Floating Expand Sidebar Button */
+.expandSidebarTab {
+  position: fixed;
+  top: calc(var(--topnav-height) + 12px);
+  left: 0;
+  width: 20px;
+  height: 40px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-left: none;
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-blue);
+  cursor: pointer;
+  z-index: 101; /* higher than sidebar */
+  transition: background-color 0.15s, color 0.15s;
+  padding: 0;
+}
+
+.expandSidebarTab:hover {
+  background: var(--color-blue-light);
+  color: var(--color-blue-hover);
+}
+
