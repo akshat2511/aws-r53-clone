@@ -5,11 +5,6 @@ if (API_BASE) {
   API_BASE = API_BASE.replace(/^["']|["']$/g, "");
 }
 
-// In development, default to local backend port; in production, use relative paths
-if (!API_BASE && process.env.NODE_ENV === "development") {
-  API_BASE = "http://localhost:8000";
-}
-
 interface RequestOptions {
   method?: string;
   body?: unknown;
