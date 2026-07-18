@@ -1,9 +1,4 @@
-let API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
-
-// Strip accidental quotes (e.g. "" or '') from the environment variable
-if (API_BASE) {
-  API_BASE = API_BASE.replace(/^["']|["']$/g, "");
-}
+const API_BASE = "";
 
 interface RequestOptions {
   method?: string;
